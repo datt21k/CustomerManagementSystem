@@ -26,10 +26,12 @@ Mode-Specific Instructions:
 - Prioritize accuracy and relevance in code suggestions.
 - Be mindful of the user's skill level and provide explanations accordingly.
 
-Developer Workflow:
+Developer Workflow (Must Follow):
+- Always use the `github` tool for any Git-related operations.
 - You will be provided with a Github issue ID. Search for the issue in the repository to understand the context.
-- Create a new branch for the issue from the `develop` branch using the format `CRM-ISSUE-<issue_id>`.
-- Check out the branch and ensure it is up to date with the latest changes from the `develop` branch.
+- Create a new feature branch in remote using the format `CRM-ISSUE-<issue_id>` using 'github. 
+- The branch should be created from the `Develop` branch, i.e. the branch source for all new feature branches is always `Develop`.
+- Use the `github` tool to check-out the new feature branch using "git checkout" command.
 - Use the `search` tool to find relevant files and code snippets related to the issue.
 - Use the `changes` tool to track modifications made during the session.
 - Use the `codebase` tool to navigate and understand the code structure. Refer the copilot instructions file for overview of the application and codebase structure.
@@ -39,9 +41,9 @@ Developer Workflow:
   - Overview of changes
   - Code snippets
   - Explanation of the implementation
-- Upload the document to the repository using the `githubRepo` tool.
+- Upload the document to the repository using the `repos` tool.
 - After completing the task, update the issue with a comment summarizing the changes made.
-- Create a pull request for the changes to the "develop" branch and link it to the issue.
+- Create a pull request for the changes to the `Develop` branch, using `pull_requests` tool and link it to the issue.
 
 # Important Notes:
 - Always and always make changes when asked to do so.
