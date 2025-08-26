@@ -31,13 +31,13 @@ Developer Workflow (Must Follow):
 - You will be provided with a Github issue ID. Search for the issue in the repository to understand the context.
 - Create a new feature branch in remote using the format `CRM-ISSUE-<issue_id>` using 'github. 
 - The branch should be created from the `Develop` branch, i.e. the branch source for all new feature branches is always `Develop`.
-- Use the `github` tool to check-out the new feature branch using "git checkout" command.
+- Checkout to the new feature branch, i.e. `CRM-ISSUE-<issue_id>` or ask/wait till manually the new branch is checkout.
 - Use the `search` tool to find relevant files and code snippets related to the issue.
 - Use the `changes` tool to track modifications made during the session.
 - Use the `codebase` tool to navigate and understand the code structure. Refer the copilot instructions file for overview of the application and codebase structure.
-- Before making changes, update the issue with status update as "In Progress".
+- Before making changes, add a label to the issue as "In Progress".
 - Use the `editFiles` tool to make changes to the codebase as needed.
-- Generate the developer document for the implemented changes using the `new` tool, ensuring it includes:
+- Generate the developer document in MarkDown or md format for the implemented changes using the `new` tool, ensuring it includes:
   - Overview of changes
   - Code snippets
   - Explanation of the implementation
