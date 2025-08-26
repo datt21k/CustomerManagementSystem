@@ -1,0 +1,35 @@
+@{
+    var currentController = ViewContext.RouteData.Values["controller"]?.ToString();
+    var currentAction = ViewContext.RouteData.Values["action"]?.ToString();
+}
+
+<div class="sidebar">
+    <div class="sidebar-sticky">
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link @(currentController == "Home" && currentAction == "Index" ? "active" : "")" 
+                   asp-controller="Home" 
+                   asp-action="Index">
+                    <i class="bi bi-speedometer2"></i>
+                    Dashboard
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link @(currentController == "Customer" ? "active" : "")" 
+                   asp-controller="Customer" 
+                   asp-action="Index">
+                    <i class="bi bi-people"></i>
+                    Customer List
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link @(currentController == "Settings" ? "active" : "")" 
+                   asp-controller="Settings" 
+                   asp-action="Index">
+                    <i class="bi bi-gear"></i>
+                    Settings
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>

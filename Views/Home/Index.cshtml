@@ -1,0 +1,31 @@
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<div class="container-fluid">
+    <h1 class="mt-4">Dashboard</h1>
+    
+    <div class="row mt-4">
+        <div class="col-xl-3 col-md-6">
+            <div class="card bg-primary text-white mb-4">
+                <div class="card-body">
+                    <h5>Total Customers</h5>
+                    <h2>@ViewBag.TotalCustomers</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row mt-4">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">Recent Activity</h5>
+                </div>
+                <div class="card-body">
+                    <p>Recent customer activities will be shown here in future updates.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
