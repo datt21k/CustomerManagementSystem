@@ -39,8 +39,21 @@ button.accept-policy {
   line-height: inherit;
 }
 
+#side-menu {
+  min-height: 100vh;
+}
+
+#side-menu .nav-link {
+  color: #333;
+}
+
+#side-menu .nav-link:hover, #side-menu .nav-link.active {
+  background-color: #f8f9fa;
+  color: #1b6ec2;
+}
+
 .footer {
-  position: absolute;
+  position: relative;
   bottom: 0;
   width: 100%;
   white-space: nowrap;
