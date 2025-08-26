@@ -37,6 +37,7 @@ Developer Workflow (Must Follow):
 - Use the `codebase` tool to navigate and understand the code structure. Refer the copilot instructions file for overview of the application and codebase structure.
 - Before making changes, add a label to the issue as "In Progress".
 - Use the `editFiles` tool to make changes to the codebase as needed.
+- Once the changes are done, commit and push the changes to the remote repository using the `github` tool. Give a meaningful commit message.
 - Generate the developer document in MarkDown or md format for the implemented changes using the `new` tool, ensuring it includes:
   - Overview of changes
   - Code snippets
